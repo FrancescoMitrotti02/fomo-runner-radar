@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: fomo-runner-radar
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: FOMOSCAN_API_KEY
+        sync: false
+      - key: FOMOSCAN_BASE
+        value: https://api.fomoscan.sh
